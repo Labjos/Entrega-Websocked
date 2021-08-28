@@ -1,0 +1,26 @@
+
+
+<h2>Ingrese Producto</h2>
+
+<form id="formulario" method="POST" action="/productos" >
+    <label for="titulo">Marca</label>
+    <input type="text" name="titulo" id="titulo" placeholder="Ingrese Producto">
+
+    <label for="precio">Precio</label>
+    <input type="text" name="precio" id="precio" placeholder="Ingrese Precio">
+    
+    <label for="imagen">Cargar Imagen</label>
+    <input type="text" name="imagen" id="imagen" placeholder="Inserte una imagen">
+
+</form>
+
+<script>
+    document.querySelector('#formulario').onSubmit = () => {
+
+        const titulo = document.getElementById('titulo').value
+        const precio = document.getElementById('precio').value
+
+        alert('Has Cargado un nuevo producto: \n Marca;' + titulo + '\n Precio: $' = precio)
+    }
+
+</script>
